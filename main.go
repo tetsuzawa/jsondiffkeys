@@ -18,7 +18,7 @@ func main() {
 		os.Exit(1)
 	}
 	a := flag.Arg(0)
-	b := flag.Arg(0)
+	b := flag.Arg(1)
 	aBuf, err := os.ReadFile(a)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, fmt.Errorf("failed to read %s: %w", a, err))
