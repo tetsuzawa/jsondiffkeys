@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	sep := flag.String("-s", "\n", "separator")
+	sep := flag.String("s", "\n", "separator")
 	flag.Parse()
 	if flag.NArg() != 2 {
 		fmt.Fprintln(os.Stderr, "usage: jsondiffkeys <file1> <file2>")
